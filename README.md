@@ -72,8 +72,8 @@ Depois acesse `http://localhost:8000`.
 O que já está no projeto:
 
 - **Site estático**: não há servidor de aplicação, banco de dados, login ou formulário para atacar.
-- **Zero terceiros**: nenhuma fonte, script, CDN ou analytics externo; nada de cookies.
-- **Content-Security-Policy estrita** (`default-src 'none'`, só arquivos do próprio site), sem scripts ou estilos inline.
+- **Terceiros mínimos**: nenhuma fonte ou CDN externa e nada de cookies. A única exceção é o Cloudflare Web Analytics (sem cookies), liberado explicitamente na CSP.
+- **Content-Security-Policy estrita** (`default-src 'none'`, só arquivos do próprio site mais o script de métricas da Cloudflare), sem scripts ou estilos inline.
 - **HSTS, X-Frame-Options, nosniff, Referrer-Policy, Permissions-Policy** no arquivo `_headers`.
 - Links externos com `rel="noopener noreferrer"`.
 

@@ -178,7 +178,7 @@ function seoBlock(file, graph) {
   return tags.join('\n  ');
 }
 
-const CSP = "default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; manifest-src 'self'; base-uri 'none'; form-action 'none'";
+const CSP = "default-src 'none'; script-src 'self' https://static.cloudflareinsights.com; connect-src https://cloudflareinsights.com; style-src 'self'; font-src 'self'; img-src 'self' data:; manifest-src 'self'; base-uri 'none'; form-action 'none'";
 
 function areaPage(a) {
   const crumbs = {
