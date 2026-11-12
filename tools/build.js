@@ -152,11 +152,11 @@ const ld = (obj) => `<script type="application/ld+json">${JSON.stringify(obj).re
 const escritorio = () => ({
   '@type': ['LegalService', 'Attorney'],
   ...(DOMINIO ? { '@id': `${DOMINIO}/#escritorio`, url: `${DOMINIO}/`, image: `${DOMINIO}/img/og.png`, logo: `${DOMINIO}/img/og.png` } : {}),
-  name: `${NOME} Advogada`,
+  name: `Dra. ${NOME} Advogada`,
   description: 'Advocacia em Direito do Trabalho, Cível, de Família e Médico para pessoas e empresas.',
   telephone: TELEFONE,
   email: 'contato@jenniferfranca.adv.br',
-  address: { '@type': 'PostalAddress', streetAddress: 'Rua Campos Sales, 167, Sala 708, Vila Bocaina', addressLocality: 'Mauá', addressRegion: 'SP', addressCountry: 'BR' },
+  address: { '@type': 'PostalAddress', streetAddress: 'Rua Campos Sales, 167, Sala 708, Vila Bocaina', addressLocality: 'Mauá', addressRegion: 'SP', postalCode: '09310-040', addressCountry: 'BR' },
   areaServed: { '@type': 'State', name: 'São Paulo' },
   knowsAbout: ['Direito do Trabalho', 'Direito Civil', 'Direito de Família', 'Direito Médico', 'Erro médico', 'Compliance', 'LGPD'],
   founder: { '@type': 'Person', name: NOME, jobTitle: 'Advogada', identifier: OAB },
@@ -283,7 +283,7 @@ ${a.faq.map(([q, r]) => `        <details>\n          <summary>${q}</summary>\n 
         <dl class="contact-list">
           <div><dt>WhatsApp</dt><dd><a class="js-whats js-whats-label" href="#contato">(11) 95134-1466</a></dd></div>
           <div><dt>E-mail</dt><dd><a href="mailto:contato@jenniferfranca.adv.br">contato@jenniferfranca.adv.br</a></dd></div>
-          <div><dt>Escritório</dt><dd><address>Rua Campos Sales, 167, Sala 708<br>Vila Bocaina, Mauá/SP</address></dd></div>
+          <div><dt>Escritório</dt><dd><address>Rua Campos Sales, 167, Sala 708<br>Vila Bocaina, Mauá/SP, CEP 09310-040</address></dd></div>
           <div><dt>Área de atendimento</dt><dd>Todo o estado de São Paulo</dd></div>
           <div><dt>Horário</dt><dd>Somente com agendamento</dd></div>
         </dl>

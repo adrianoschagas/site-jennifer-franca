@@ -27,7 +27,6 @@ Site institucional estático (HTML, CSS e um pequeno JavaScript), sem banco de d
 
 1. **Domínio**: já configurado como `https://jenniferfranca.adv.br` em `tools/build.js`. Se o nome registrado for outro, alterar `DOMINIO` e rodar `node tools/build.js`.
 3. **E-mail**: o site mostra `contato@jenniferfranca.adv.br`. Antes de publicar, ativar o redirecionamento na Cloudflare (*Email* → *Email Routing*) para o e-mail pessoal dela e enviar uma mensagem de teste.
-5. **CEP do escritório** (opcional): acrescentar na seção `id="contato"` e no JSON-LD (`tools/build.js`).
 4. **Revisão dos textos** pela advogada, em especial as páginas das áreas.
 
 ## SEO
